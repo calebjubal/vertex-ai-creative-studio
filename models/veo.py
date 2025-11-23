@@ -38,6 +38,7 @@ client = genai.Client(
     vertexai=True,
     project=config.VEO_PROJECT_ID,
     location=config.LOCATION,
+    http_options={'api_version': config.VERTEX_API_VERSION},
 )
 
 # Map for person generation options
